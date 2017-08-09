@@ -1,0 +1,25 @@
+button{
+  background-color:  "white";
+  color: "black";
+  font-weight: 300;
+  font-size: 200%;
+  font-family: "Josefin Slab";
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #e6e6e6;
+    padding: 20px;
+    width: 400px;
+    height: 75px;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    border: 3px ;
+    padding: 10px;
+    text-align:center;
+  }
+p{
+  font-size: 25px;
+  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
