@@ -3,6 +3,7 @@
 
 <head>
 
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -10,15 +11,16 @@
 
     <title>Business Casual - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/news.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -69,13 +71,46 @@
     <div class="container">
 
         <div class="bg-faded p-4 my-4">
+
             <div class="card card-inverse">
-                <img class="card-img img-fluid w-100" src="img/slide-1.jpg" alt="">
-                <div class="card-img-overlay bg-overlay">
-                    <h2 class="card-title text-shadow text-uppercase mb-0">Post Title</h2>
-                    <h4 class="text-shadow text-white">March 1, 2017</h4>
-                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
-                    <a href="" class="btn btn-secondary">Read More</a>
+              <img class="card-img img-fluid w-100" src="img/slide-1.jpg" alt="">
+              <div class="card-img-overlay bg-overlay" id="add-scroll-y">
+                <!-- <div class="card-img-overlay bg-overlay" id="add-scroll-y">
+
+                    <!-- <img src="https://s-media-cache-ak0.pinimg.com/736x/ca/3e/0b/ca3e0b4a22bfeb31984cc265a4f9b033.jpg" alt="" style="width:736px;height:951px;"> -->
+                    <!-- <p class="lead card-text text-shadow text-white w-50 hidden-md-down"></p> -->
+
+                    <h2 class="card-title text-shadow text-uppercase mb-0">Featured Articles</h2>
+                    <br>
+                    <h3>1. "A reformed techie (me) considers the value of a fuzzy education," by Tracy Chou</h3>
+                    <h4>  <center>"It worries me that so many of the builders of technology today are people like me,
+                      people who haven’t spent anywhere near enough time thinking about these larger questions
+                       of what it is that we are building, and what the implications are for the world." </center></h4>
+                    <a href="https://medium.com/@triketora/a-reformed-techie-me-considers-the-value-of-a-fuzzy-education-a9c741cfb821" class="btn btn-secondary" >Read More</a>
+                    <br><br>
+
+                    <h3>2. "The Imposter Syndrome: Master the Art of Pretending," by Julie Zhuo</h3>
+                    <h4><center>"Asking is hard, but so is weathering a thousand little paper-cuts of interpretation."</center></h4>
+                    <a href="https://medium.com/the-year-of-the-looking-glass/the-imposter-syndrome-9e23e2326d88" class="btn btn-secondary" >Read More</a>
+                    <br><br>
+
+                    <h3>3. "Silent Technical Privilege," by Philip Guo</h3>
+                    <h4><center>"It frustrates me that people not in the majority demographic
+                       often need to be tough as nails to succeed in this field, constantly
+                       bearing the lasting effects of thousands of micro-inequities."</center></h4>
+                    <a href="http://pgbovine.net/tech-privilege.htm" class="btn btn-secondary" >Read More</a>
+                    <br><br>
+
+                    <h3>4. "Can AI Remain Safe as Companies Race to Develop It?," by Ariel Conns</h3>
+                    <h4><center>"[A]s great as AI could be, it also comes with risks,
+                      from unintended bias and discrimination to potential accidental catastrophe."</center></h4>
+                    <a href="http://www.huffingtonpost.com/entry/can-ai-remain-safe-as-companies-race-to-develop-it_us_5983af06e4b0f2c7d93f5481" class="btn btn-secondary" >Read More</a>
+                    <br><br>
+
+                    <!-- <h3>5. "Can Students Have Too Much Tech?," by Susan Pinker</h3>
+                    <a href="https://www.nytimes.com/2015/01/30/opinion/can-students-have-too-much-tech.html" class="btn btn-secondary" >Read More</a>
+                    <br><br> -->
+
                 </div>
             </div>
         </div>
@@ -84,8 +119,7 @@
             <div class="card card-inverse">
                 <img class="card-img img-fluid w-100" src="img/slide-2.jpg" alt="">
                 <div class="card-img-overlay bg-overlay">
-                    <h2 class="card-title text-shadow text-uppercase mb-0">Post Title</h2>
-                    <h4 class="text-shadow text-white">March 1, 2017</h4>
+                    <h2 class="card-title text-shadow text-uppercase mb-0">Tech Today</h2>
                     <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
                     <a href="" class="btn btn-secondary">Read More</a>
                 </div>
@@ -95,24 +129,24 @@
         <div class="bg-faded p-4 my-4">
             <div class="card card-inverse">
                 <img class="card-img img-fluid w-100" src="img/slide-3.jpg" alt="">
-                <div class="card-img-overlay bg-overlay">
-                    <h2 class="card-title text-shadow text-uppercase mb-0">Post Title</h2>
-                    <h4 class="text-shadow text-white">March 1, 2017</h4>
+                <div class="card-img-overlay bg-overlay" id="add-scroll-y">
+                    <h2 class="card-title text-shadow text-uppercase mb-0">Important People in Tech</h2>
                     <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
                     <a href="" class="btn btn-secondary">Read More</a>
                 </div>
             </div>
+            
         </div>
 
         <!-- Pagination -->
-        <div class="bg-faded p-4 my-4">
+        <!-- <div class="bg-faded p-4 my-4">
             <ul class="pagination justify-content-center mb-0">
                 <li class="page-item"><a class="page-link" href="#">&larr; Older</a></li>
                 <li class="page-item disabled"><a class="page-link" href="#">Newer &rarr;</a></li>
             </ul>
         </div>
 
-    </div>
+    </div> -->
     <!-- /.container -->
 
     <footer class="bg-faded text-center py-5">

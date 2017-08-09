@@ -1,0 +1,16 @@
+#add-scroll-y {
+  overflow-y: auto;
+}
+/*#add-scroll-y {
+float:left;
+width:1000px;
+overflow-y: auto;
+height: 100px;
+}
+card-img-overlay bg-overlay.hidden {
+    overflow-y: hidden;
+}*/
+/*
+.boxed {
+fill: white ;
+}*/
