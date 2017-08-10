@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/learn.css" rel="stylesheet">
+    <link href="css/learnHTML.css" rel="stylesheet">
+    <script type="text/javascript" src="learnHTML.js"> </script>
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -68,17 +70,89 @@
 
         <div class="bg-faded p-4 my-4">
             <hr class="divider">
-            <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn HTML</strong></h2>
+            <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn HTML Interactive</strong></h2>
             <hr class="divider">
+            <h5>In the space below, you can play around with various HTML &#60;tags&#62;. In HTML, you must always &#60;open&#62; and &#60;/close&#62; tags. Some of the tags you may explore:</h5>
+            <ul style="color:black">
+              <li><h6>&#60;h1&#62;, &#60;h2&#62;, &#60;h3&#62;: headers of sizes 1 (largest) through 3 (smallest)</h6></li>
+              <li><h6>&#60;p&#62;: paragraph (can be 1+ lines)</h6></p>
+              <li><h6>&#60;b&#62;,&#60;i&#62;, &#60;sup&#62;, &#60;sub&#62;: <b>bold</b>, <i>italics</i>, <sup>sup</sup>erscript, and <sub>sub</sub>script</h6></li>
+              <li><h6>href: link a website</h6></li>
+              <li><h6>&#60;img&#62;: add an image</h6></li>
+              <li><h6>&#60;ul&#62;: an unordered list</h6></li>
+              <li><h6>&#60;ol&#62;: an ordered list</h6></li>
+            </ul>
+            <br>
             <div class="row">
-              <div class="col-md-3">
-                <h3 style="text-align:center">Buttons</h3>
+              <div class="col-md-2">
+                <h3 style="text-align:left">Buttons</h3>
+                <button id="button" type ="html" onclick="showH1()">&#60;h1&#62; </button>
+                <button id="button" type ="html" onclick="showH2()">&#60;h2&#62; </button>
+                <button id="button" type ="html" onclick="showH3()">&#60;h3&#62; </button>
+                <button id="button" type ="html" onclick="showPara()">&#60;p&#62; </button>
+                <button id="button" type="html" onclick="showBold()">&#60;b&#62;</button>
+                <button id="button" type="html" onclick="showItalic()">&#60;i&#62;</button>
+                <button id="button" type="html" onclick="showSup()">&#60;sup&#62;</button>
+                <button id="button" type="html" onclick="showSub()">&#60;sub&#62;</button>
+                <button id="button" type="html" onclick="showHREF()">href</button>
+                <button id="button" type="html" onclick="showImg()">&#60;img&#62;</button>
+                <button id="button" type="html" onclick="showList()">&#60;ul&#62;</button>
+                <button id="button" type="html" onclick="showNum()">&#60;ol&#62;</button>
               </div>
-              <div class="col-md-4">
-                <h3 style="text-align:center">Script/Code</h3>
+              <div class="col-md-5">
+                <h3 style="text-align:left"> Script</h3>
+                <div class="container-text">
+                  <p> &#60;!DOCTYPE html&#62; </p>
+                  <p> &#60;html&#62;</p>
+                  <p style="text-indent: 30px"> &#60;body&#62;</p>
+                  <p class="h1tag" style="text-indent: 60px">&#60;h1&#62; This Is A Header (size 1) &#60;/h1&#62;</p>
+                  <p class="h2tag" style="text-indent: 60px">&#60;h2&#62; This Is A Header (size 2) &#60;/h2&#62;</p>
+                  <p class="h3tag" style="text-indent: 60px">&#60;h3&#62; This Is A Header (size 3) &#60;/h3&#62;</p>
+                  <p class="ptag" style="text-indent: 60px"> &#60;p&#62; This is a paragraph. &#60;/p&#62; </p>
+                  <p class="boldtag" style="text-indent: 60px">&#60;p&#62;&#60;b&#62;This text is bold.&#60;/b&#62;&#60;/p&#62;</p>
+                  <p class="italictag" style="text-indent: 60px">&#60;p&#62;&#60;i&#62;This text is italic.&#60;/i&#62;&#60;/p&#62;</p>
+                  <p class="suptag" style="text-indent: 60px">&#60;p&#62;This text is &#60;sup&#62;superscript.&#60;sup&#62;&#60;/p&#62;</p>
+                  <p class="subtag" style="text-indent: 60px">&#60;p&#62;This text is &#60;sub&#62;subscript.&#60;sub&#62;&#60;/p&#62;</p>
+                  <p class="hreftag" style="margin-left: 60px"> &#60;a href&#61;&#34; https://www.youtube.com/watch?v=CE-JlvmnRtY &#34;&#62; This is a link. &#60;/a&#62;</p>
+                  <p class="imgtag" style="margin-left:60px"> &#60;img src&#61;&#34;img/cat.jpg&#34; alt&#61;&#34;cat.jpg&#34; width&#61;&#34;200&#34; length&#61;&#34;200&#34;&#62;</p>
+                  <p class="listtag" style="text-indent: 60px">&#60;ul&#62;</p>
+                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This is an unordered list.&#60;li&#62;</p>
+                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;You can list items.&#60;li&#62;</p>
+                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This list uses bullet points.&#60;li&#62;</p>
+                  <p class="listtag" style="text-indent: 60px">&#60;ul&#62;</p>
+                  <p class="numtag" style="text-indent: 60px">&#60;ol&#62;</p>
+                  <p class="numtag" style="text-indent: 90px">&#60;li&#62;This is an ordered list.&#60;li&#62;</p>
+                  <p class="numtag" style="text-indent: 90px">&#60;li&#62;You can list items using numbers.&#60;li&#62;</p>
+                  <p class="numtag" style="margin-left: 90px">&#60;li&#62;It's great for keeping track of how many items are in a list!&#60;li&#62;</p>
+                  <p class="numtag" style="text-indent: 60px">&#60;ol&#62;</p>
+                  <p style="text-indent: 30px"> &#60;/body&#62; </p>
+                  <p> &#60;/html&#62; </p>
+                </div>
               </div>
               <div class= "col-md-5">
-                <h3 style="text-align:center">Output</h3>
+                <h3 style="text-align:left">Output</h3>
+                <div class="container-text">
+                  <p class="h1tag" style="font-size:40px"> This Is A Header (size 1) </p>
+                  <p class="h2tag" style="font-size:35px"> This Is A Header (size 2) </p>
+                  <p class="h3tag" style="font-size:30px"> This Is A Header (size 3) </p>
+                  <p class="ptag">This is a paragraph.</p>
+                  <p class="boldtag"><b>This text is bold.</b></p>
+                  <p class="italictag"><i>This text is italic.</i></p>
+                  <p class="suptag">This text is <sup>superscript.</sup></p>
+                  <p class="subtag">This text is <sub>subscript.</sub></p>
+                  <p class="hreftag"><a href="https://www.youtube.com/watch?v=CE-JlvmnRtY">This is a link</a></p>
+                  <img class="imgtag" src="img/cat.jpg" alt="cat.jpg" width="150px" length="150px">
+                  <ul class="listtag">
+                    <li><p>This is an unordered list.</p></li>
+                    <li><p>You can list items.</p></li>
+                    <li><p>This list uses bullet points.</p></li>
+                  </ul>
+                  <ol class="numtag">
+                    <li><p>This is an ordered list.</p></li>
+                    <li><p>You can list items using numbers.</p></li>
+                    <li><p>It's great for keeping track of how many items are in a list!</p></li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
