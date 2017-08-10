@@ -23,3 +23,7 @@ p{
   font-size: 25px;
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+img {
+   display : block;
+   margin : auto;
+}
