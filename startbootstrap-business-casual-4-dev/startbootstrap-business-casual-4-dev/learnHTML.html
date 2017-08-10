@@ -79,9 +79,14 @@
                 <button id="button" type ="html" onclick="showH2()">&#60;h2&#62; </button>
                 <button id="button" type ="html" onclick="showH3()">&#60;h3&#62; </button>
                 <button id="button" type ="html" onclick="showPara()">&#60;p&#62; </button>
+                <button id="button" type="html" onclick="showBold()">&#60;b&#62;</button>
+                <button id="button" type="html" onclick="showItalic()">&#60;i&#62;</button>
+                <button id="button" type="html" onclick="showSup()">&#60;sup&#62;</button>
+                <button id="button" type="html" onclick="showSub()">&#60;sub&#62;</button>
                 <button id="button" type="html" onclick="showHREF()">href</button>
                 <button id="button" type="html" onclick="showImg()">&#60;img&#62;</button>
                 <button id="button" type="html" onclick="showList()">&#60;ul&#62;</button>
+                <button id="button" type="html" onclick="showNum()">&#60;ol&#62;</button>
               </div>
               <div class="col-md-5">
                 <h3 style="text-align:left"> Script/Code</h3>
@@ -93,13 +98,22 @@
                   <p class="h2tag" style="text-indent: 60px">&#60;h2&#62; This Is A Header (size 2) &#60;/h2&#62;</p>
                   <p class="h3tag" style="text-indent: 60px">&#60;h3&#62; This Is A Header (size 3) &#60;/h3&#62;</p>
                   <p class="ptag" style="text-indent: 60px"> &#60;p&#62; This is a paragraph. &#60;/p&#62; </p>
+                  <p class="boldtag" style="text-indent: 60px">&#60;p&#62;&#60;b&#62;This text is bold.&#60;/b&#62;&#60;/p&#62;</p>
+                  <p class="italictag" style="text-indent: 60px">&#60;p&#62;&#60;i&#62;This text is italic.&#60;/i&#62;&#60;/p&#62;</p>
+                  <p class="suptag" style="text-indent: 60px">&#60;p&#62;This text is &#60;sup&#62;superscript.&#60;sup&#62;&#60;/p&#62;</p>
+                  <p class="subtag" style="text-indent: 60px">&#60;p&#62;This text is &#60;sub&#62;subscript.&#60;sub&#62;&#60;/p&#62;</p>
                   <p class="hreftag" style="margin-left: 60px"> &#60;a href&#61;&#34; https://www.youtube.com/watch?v=CE-JlvmnRtY &#34;&#62; This is a link. &#60;/a&#62;</p>
                   <p class="imgtag" style="margin-left:60px"> &#60;img src&#61;&#34;img/cat.jpg&#34; alt&#61;&#34;cat.jpg&#34; width&#61;&#34;200&#34; length&#61;&#34;200&#34;&#62;</p>
                   <p class="listtag" style="text-indent: 60px">&#60;ul&#62;</p>
-                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This is the first item in a list.&#60;li&#62;</p>
-                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This is the second item.&#60;li&#62;</p>
-                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This is the third!&#60;li&#62;</p>
+                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This is an unordered list.&#60;li&#62;</p>
+                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;You can list items.&#60;li&#62;</p>
+                  <p class="listtag" style="text-indent: 90px">&#60;li&#62;This list uses bullet points.&#60;li&#62;</p>
                   <p class="listtag" style="text-indent: 60px">&#60;ul&#62;</p>
+                  <p class="numtag" style="text-indent: 60px">&#60;ol&#62;</p>
+                  <p class="numtag" style="text-indent: 90px">&#60;li&#62;This is an ordered list.&#60;li&#62;</p>
+                  <p class="numtag" style="text-indent: 90px">&#60;li&#62;You can list items using numbers.&#60;li&#62;</p>
+                  <p class="numtag" style="margin-left: 90px">&#60;li&#62;It's great for keeping track of how many items are in a list!&#60;li&#62;</p>
+                  <p class="numtag" style="text-indent: 60px">&#60;ol&#62;</p>
                   <p style="text-indent: 30px"> &#60;/body&#62; </p>
                   <p> &#60;/html&#62; </p>
                 </div>
@@ -111,13 +125,22 @@
                   <p class="h2tag" style="font-size:35px"> This Is A Header (size 2) </p>
                   <p class="h3tag" style="font-size:30px"> This Is A Header (size 3) </p>
                   <p class="ptag">This is a paragraph.</p>
+                  <p class="boldtag"><b>This text is bold.</b></p>
+                  <p class="italictag"><i>This text is italic.</i></p>
+                  <p class="suptag">This text is <sup>superscript.</sup></p>
+                  <p class="subtag">This text is <sub>subscript.</sub></p>
                   <p class="hreftag"><a href="https://www.youtube.com/watch?v=CE-JlvmnRtY">This is a link</a></p>
                   <img class="imgtag" src="img/cat.jpg" alt="cat.jpg" width="150px" length="150px">
                   <ul class="listtag">
-                    <li><p>This is this first item in a list.</p></li>
-                    <li><p>This is the second item.</p></li>
-                    <li><p>This is the third!</p></li>
+                    <li><p>This is an unordered list.</p></li>
+                    <li><p>You can list items.</p></li>
+                    <li><p>This list uses bullet points.</p></li>
                   </ul>
+                  <ol class="numtag">
+                    <li><p>This is an ordered list.</p></li>
+                    <li><p>You can list items using numbers.</p></li>
+                    <li><p>It's great for keeping track of how many items are in a list!</p></li>
+                  </ol>
                 </div>
               </div>
             </div>

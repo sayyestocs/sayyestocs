@@ -81,3 +81,63 @@ function showList() {
       }
   }
 }
+
+function showBold() {
+  var tag_list = document.getElementsByClassName('boldtag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}
+
+function showItalic() {
+  var tag_list = document.getElementsByClassName('italictag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}
+
+function showSup() {
+  var tag_list = document.getElementsByClassName('suptag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}
+
+function showSub() {
+  var tag_list = document.getElementsByClassName('subtag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}
+
+function showNum() {
+  var tag_list = document.getElementsByClassName('numtag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}

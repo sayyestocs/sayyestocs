@@ -17,7 +17,7 @@ p {
   padding: 5px;
   background-color: white;
   position: relative;
-  height: 500px;
+  min-height: 550px;
 }
 
 .ptag {
@@ -45,5 +45,25 @@ p {
 }
 
 .listtag {
+  display: none;
+}
+
+.boldtag {
+  display: none;
+}
+
+.italictag {
+  display: none;
+}
+
+.suptag {
+  display: none;
+}
+
+.subtag {
+  display: none;
+}
+
+.numtag {
   display: none;
 }
