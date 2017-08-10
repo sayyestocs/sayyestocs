@@ -1,0 +1,46 @@
+#button {
+    border-radius: 10px;
+    background: #e6e6e6;
+    padding: 5px;
+    width: 70px;
+    height: 60px;
+    font-size: 20px;
+}
+
+p {
+  font-family: times;
+  font-size: 15px;
+  color: black;
+}
+
+.container-text {
+  padding: 5px;
+  background-color: white;
+  position: relative;
+  height: 500px;
+}
+
+.ptag {
+  text-align: left;
+  display: none;
+}
+
+.h1tag {
+  text-align: left;
+  display: none;
+}
+
+.h2tag {
+  text-align: left;
+  display: none;
+}
+
+.h3tag {
+  text-align: left;
+  display: none;
+}
+
+.hreftag {
+  text-align: left;
+  display: none;
+}
