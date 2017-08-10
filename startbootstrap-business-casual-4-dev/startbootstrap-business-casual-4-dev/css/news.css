@@ -123,3 +123,9 @@ function showDivs(n) {
     max-height: 100px;
     min-height: 10px;
 }
+/*
+.carousel-caption {
+  bottom: initial;
+  right: initial;
+  left: 5%;
+}*/
