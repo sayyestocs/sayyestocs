@@ -57,3 +57,27 @@ function showHREF() {
       }
   }
 }
+
+function showImg() {
+  var tag_list = document.getElementsByClassName('imgtag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}
+
+function showList() {
+  var tag_list = document.getElementsByClassName('listtag');
+  for (i = 0; i < tag_list.length; i++) {
+      var x = tag_list[i];
+      if (x.style.display === 'block') {
+          x.style.display = 'none';
+      } else {
+          x.style.display = 'block';
+      }
+  }
+}

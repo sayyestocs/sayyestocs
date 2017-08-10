@@ -21,26 +21,29 @@ p {
 }
 
 .ptag {
-  text-align: left;
   display: none;
 }
 
 .h1tag {
-  text-align: left;
   display: none;
 }
 
 .h2tag {
-  text-align: left;
   display: none;
 }
 
 .h3tag {
-  text-align: left;
   display: none;
 }
 
 .hreftag {
-  text-align: left;
+  display: none;
+}
+
+.imgtag {
+  display: none;
+}
+
+.listtag {
   display: none;
 }
