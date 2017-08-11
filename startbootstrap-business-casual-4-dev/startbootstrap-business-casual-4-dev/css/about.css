@@ -28,7 +28,7 @@
 }
 
 .text-team-member{
-  
+
 }
 
 .img-team-member {
@@ -36,4 +36,9 @@
   height: 200px;
   padding-top:10px;
   display:table-cell;
+}
+.rotate {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
 }
