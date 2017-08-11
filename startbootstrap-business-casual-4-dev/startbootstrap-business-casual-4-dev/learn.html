@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>SayYesToCS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/learnCSS.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -99,24 +100,81 @@
                 </div>
             </div>
         </div>
-        
+        <div class="container">
+            <div class="bg-faded p-4 my-4">
+                <hr class="divider">
+                <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn CSS Tutorial</strong></h2>
+                <hr class="divider">
+                <div class="row">
+                  <div>
+                    <p>
+                      1. To start refer to the setup to learn how to save the file correctly
+                      <br>
+                      2. In order for you to link your HTML page to your CSS page, you will need to go to your HTML page and write
+                      '&lt;link href="helloStyle.css" rel="stylesheet"&gt;'
+                      <br><img src="img/linking_Css_Page.png" alt="linking" align="middle" height="200" width="600">
+                      <br>
+                      3. First lets change the background color! Your headings, text, pictures, etc. are in your body tag. So,
+                      to change the background color for everything you need to do something like this:
+                      <br><img src="img/backgroundColor.png" alt="background color" align="middle" height="100" width="400">
+                      <img src="img/backgroundColorOutput.png" alt="background color output" align="middle" height="200" width="400"><br>
+                      (The 'Hello World' statement is just a place holder for us your website should say whatever you put in your HTML file)
+                      <br>
+                      You don't need to make the color cyan. CSS has only a couple of the basic colors that you can use by writing
+                      their name, but you could replace the name with color codes that are in quotes. Here's a link to a bunch of different
+                      color codes you could use.<a href="https://www.w3schools.com/colors/colors_picker.asp">Click Here!</a>
+                      <br><img src="img/specialBackgroundColor.png" alt="color codes" align="middle" height="100" width="400">
+                      <img src="img/specialBackgroundColorOutput.png" alt="color codes output" align="middle" height="200" width="400">
+                      <br>
+                      4. To change the fonts you have a couple of different options.<br>
+                       Option 1: If you want to have the same font for everything on your page you can do this:
+                       <br><img src="img/scriptFonts.png" alt="Fonts" align="middle" height="100" width="500">
+                       <img src="img/changeFont.png" alt="Fonts output" align="middle" height="200" width="400">
+                       <br>Option 2: If you want to make your paragraphs and headers different fonts you can do this:
+                       <br><img src="img/scriptChangeFontSep.png" alt="Fonts" align="middle" height="200" width="400">
+                       <img src="img/changeFontSep.png" alt="Fonts output" align="middle" height="200" width="400"><br>
+                       &emsp;&emsp;&emsp;&emsp;&emsp;There are a bunch more fonts you can use. Here's a link to some.
+                        <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">Click Here!</a>
+                        <br>
+                      5. To change your font size you have the same two options. I will show you the way to do it separately
+                      for your paragraphs and headers. You can also write the same line just in the body if you prefer to do it that way.
+                      <br><img src="img/scriptSizing.png" alt="script" align="middle" height="200" width="400">
+                      <img src="img/sizingOutput.png" alt="script" align="middle" height="300" width="600"><br>
+                      6. You have now changed your font, background color, and font size! The next step is changing your font color!
+                      Once again like the features above you can do it all in the body if you want it all the same color.
+                      Otherwise, you can choose to do it like we did it below:<br>
+                      <img src="img/scriptFontColor.png" alt="font color script" align="middle" height="275" width="600">
+                      <img src="img/outputFontColor.png" alt="font color" align="middle" height="300" width="600">
+                      <br>
+                      Remember that you can get the hex color codes from the website linked above for background colors.
+                      <br>
+                      7. You've been probably wondering how to get your text aligned to the center, right, or left. Like all the ones above,
+                      feel free to do it in the body if you want all  your text to be aligned the same way.<br>
+                      your picture will already be aligned with the rest of your text. On the other hand if you separated it like
+                      the example we showed this is how you will center your picture! Centering a picture is a bit more
+                      complicated. This is because you will need to make a class and adjust parts in your HTML file and CSS file.
+                      Below is your HTML file on top with a circle on additional things you need to add,
+                      Css file in the middle, then the output on the bottom.<br>
+                      <img src="img/scriptHTMLCenterImg.png" alt="img alignment" align="middle" height="150" width="600">
+                      <img src="img/scriptCssCenterIMG.png" alt="img alignment" align="middle" height="275" width="600">
+                      <img src="img/outputCenterImg.png" alt="img alignment" align="middle" height="300" width="600">
+                      <br>
+                      9. Your buttons may look very plain right now. Here's how to make them look sleek and exciting!
+                      Of course there is always many ways to make your buttons look cool. For example, you can make them change
+                      color when you hover or you could make them round or square! For our purposes we will teach you how to make them
+                      rounded and how to change their color.<br>
+                      
+
+
+
+                    </p>
+                </div>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Zoom when clicked function for Google Map -->
-    <script>
-    $('.map-container')
-        .click(function() {
-            $(this).find('iframe').addClass('clicked')
-        })
-        .mouseleave(function() {
-            $(this).find('iframe').removeClass('clicked')
-        });
-    </script>
-
 </body>
 
 </html>
