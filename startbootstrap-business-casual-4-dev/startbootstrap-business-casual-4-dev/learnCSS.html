@@ -8,12 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>Say Yes to CS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/learn.css" rel="stylesheet">
     <link href="css/learnCSS.css" rel="stylesheet">
+    <script type="text/javascript" src="learnCSS.js"> </script>
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -71,19 +72,57 @@
             <hr class="divider">
             <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn CSS Interactive</strong></h2>
             <hr class="divider">
+            <h5>In the space below, you can play around with various CSS features. In CSS, we use curly brackets, {},
+              to open and close declarations, which specify what HTML properties you are altering.
+              Some of the selectors you may explore:
+            <ul style="color:black">
+              <li><h6>Background-color:determines the color of your website's background</h6></li>
+              <li><h6>Font-family:determines the font style of your text</h6></li>
+              <li><h6>Font-size:determines the size of your text</h6></li>
+              <li><h6>Font-color:determines the color of your text</h6></li>
+              <li><h6>Text-alignment:determines where the text is positioned on the page</h6></li>
+            </ul>
+            <br>
             <div class="row">
               <div class="col-md-2">
-                <h3 style="text-align: center">Buttons</h3>
+                <h3 style="text-align:left">Buttons</h3>
+                <h4><b>Background-color: </b></h4>
+                <button id="sm-button-blue" type ="html" onclick="blueBackground()">blue</button>
+                <button id="sm-button-green" type ="html" onclick="greenBackground()">green</button>
+                <button id="sm-button-red" type ="html" onclick="redBackground()">red</button>
+                <button id="sm-button-purple" type ="html" onclick="purpleBackground()">purple</button>
+                <br>
+                <h4><b>Font-family: </b></h4>
+                <br>
+                <h4><b>Font-size: </b></h4>
+                <br>
+                <h4><b>Font-color: </b></h4>
+                <br>
+                <h4><b>Text-alignment: </b></h4>
               </div>
               <div class="col-md-5">
-                <h3 style="text-align: center">Script/Code</h3>
+                <h3 style="text-align:left"> Script</h3>
+                <div class="container-text">
+                  <p>body {</p>
+                  <p id="blue-background-tag" style="text-indent: 30px">background-color: blue;</p>
+                  <p id="green-background-tag" style="text-indent: 30px">background-color: green;</p>
+                  <p id="red-background-tag" style="text-indent: 30px">background-color: red;</p>
+                  <p id="purple-background-tag" style="text-indent: 30px">background-color: purple;</p>
+                  <p>}</p>
+
+                </div>
               </div>
-              <div class="col-md-5">
-                <h3 style="text-align: center">Output/Webpage<h3>
+              <div class= "col-md-5">
+                <h3 style="text-align:left">Output</h3>
+                <div class="container-text" id="background">
+
+                </div>
               </div>
             </div>
         </div>
       </div>
+
+      <!-- Beginning of the tutorial -->
       <div class="container">
           <div class="bg-faded p-4 my-4">
               <hr class="divider">
