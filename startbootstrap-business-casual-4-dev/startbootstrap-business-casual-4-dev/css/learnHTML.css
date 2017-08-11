@@ -7,12 +7,21 @@
     font-size: 20px;
 }
 
+button{
+  font-size:70%
+
+}
+
 #sophie {
   font-family: times;
   font-size: 15px;
   color: black;
 }
 
+img {
+   display : block;
+   margin : auto;
+}
 
 
 .container-text {
