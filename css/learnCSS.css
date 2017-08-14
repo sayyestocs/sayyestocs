@@ -1,0 +1,258 @@
+img {
+   display : block;
+   margin : auto;
+}
+
+#sm-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#sm-button-blue {
+  border-radius: 10px;
+  background: #87CEFA;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#sm-button-green {
+  border-radius: 10px;
+  background: #90EE90;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#sm-button-red {
+  border-radius: 10px;
+  background: #F08080;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#sm-button-purple {
+  border-radius: 10px;
+  background: #EE82EE;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#arvo-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "arvo";
+}
+
+#cinzel-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "cinzel";
+}
+
+#lora-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "lora";
+}
+
+#hind-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "hind";
+}
+
+#ten-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 12px;
+}
+
+#fifteen-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+}
+
+#twenty-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#twentyfive-button {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 25px;
+}
+
+#button-blue {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  color: 	#000080;
+}
+
+#button-green{
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  color: 	#2E8B57;
+}
+
+#button-red {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  color: #800000
+}
+
+#button-purple {
+  border-radius: 10px;
+  background: #e6e6e6;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  color: 	#800080;
+}
+
+.container-text {
+  padding: 5px;
+  background-color: white;
+  position: relative;
+  min-height: 550px;
+  width: 100%;
+}
+
+#blue-background-tag {
+  display: none;
+}
+
+#green-background-tag {
+  display: none;
+}
+
+#red-background-tag {
+  display: none;
+}
+
+#purple-background-tag {
+  display: none;
+}
+
+#background {
+    background-color: white;
+}
+
+.sophie {
+  font-family: times;
+  font-size: 12px;
+  color: black;
+}
+
+#arvo-tag {
+  display: none;
+}
+
+#cinzel-tag {
+  display: none;
+}
+
+#lora-tag {
+  display: none;
+}
+
+#hind-tag {
+  display: none;
+}
+#ten-tag{
+  display: none;
+}
+#fifteen-tag{
+  display: none;
+}
+#twenty-tag{
+  display: none;
+}
+
+#twenty-five-tag{
+  display:none;
+}
+
+#blue-font-tag {
+  display: none;
+}
+
+#green-font-tag {
+  display: none;
+}
+
+#red-font-tag {
+  display: none;
+}
+
+#purple-font-tag {
+  display: none;
+}
+#right-tag{
+  display: none;
+}
+#left-tag{
+  display: none;
+}
+#center-tag{
+  display: none;
+}
+.sophie1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  color: white;
+}

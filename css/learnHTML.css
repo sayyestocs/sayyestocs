@@ -1,0 +1,86 @@
+#button {
+    border-radius: 10px;
+    background: #e6e6e6;
+    padding: 5px;
+    width: 70px;
+    height: 60px;
+    font-size: 20px;
+}
+
+button{
+  font-size:70%
+
+}
+
+#sophie {
+  font-family: times;
+  font-size: 15px;
+  color: black;
+}
+
+#sophie1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  color: white;
+}
+
+img {
+   display : block;
+   margin : auto;
+}
+
+
+.container-text {
+  padding: 5px;
+  background-color: white;
+  position: relative;
+  min-height: 550px;
+}
+
+.ptag {
+  display: none;
+}
+
+.h1tag {
+  display: none;
+}
+
+.h2tag {
+  display: none;
+}
+
+.h3tag {
+  display: none;
+}
+
+.hreftag {
+  display: none;
+}
+
+.imgtag {
+  display: none;
+}
+
+.listtag {
+  display: none;
+}
+
+.boldtag {
+  display: none;
+}
+
+.italictag {
+  display: none;
+}
+
+.suptag {
+  display: none;
+}
+
+.subtag {
+  display: none;
+}
+
+.numtag {
+  display: none;
+}

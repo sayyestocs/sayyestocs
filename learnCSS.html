@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Say Yes to CS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/learn.css" rel="stylesheet">
+    <link href="css/learnCSS.css" rel="stylesheet">
+    <script type="text/javascript" src="learnCSS.js"> </script>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+
+  <div class="tagline-upper text-center text-heading text-shadow text-white mt-4 hidden-md-down">Say Yes To CS</div>
+  <br>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-toggleable-md navbar-light navbar-custom bg-faded py-lg-4">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold hidden-lg-up" href="#">Start Bootstrap</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="learn.html">Learn</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="bg-faded p-4 my-4">
+            <hr class="divider">
+            <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn CSS Interactive</strong></h2>
+            <hr class="divider">
+            <h5>In the space below, you can play around with various CSS features. In CSS, we use curly brackets, {},
+              to open and close declarations, which specify what HTML properties you are altering.
+              Some of the selectors you may explore:
+            <ul style="color:black">
+              <li><h6>Background-color:determines the color of your website's background</h6></li>
+              <li><h6>Font-family:determines the font style of your text</h6></li>
+              <li><h6>Font-size:determines the size of your text</h6></li>
+              <li><h6>Font-color:determines the color of your text</h6></li>
+              <li><h6>Text-alignment:determines where the text is positioned on the page</h6></li>
+            </ul>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <h3 style="text-align:left"><b>Buttons</b></h3>
+                <h4>Background-color: </h4>
+                <button id="sm-button-blue" type ="html" onclick="blueBackground()">blue</button>
+                <button id="sm-button-green" type ="html" onclick="greenBackground()">green</button>
+                <button id="sm-button-red" type ="html" onclick="redBackground()">red</button>
+                <button id="sm-button-purple" type ="html" onclick="purpleBackground()">purple</button>
+                <br><br>
+                <h4>Font-family: </h4>
+                <button id="arvo-button" type ="html" onclick=arvoFont()>Arvo</button>
+                <button id="cinzel-button" type ="html" onclick=cinzelFont()>Cinzel</button>
+                <button id="lora-button" type ="html" onclick=loraFont()>Lora</button>
+                <button id="hind-button" type ="html" onclick=hindFont()>Hind</button>
+                <br><br>
+                <h4>Font-size: </h4>
+                <button id="ten-button" type ="html" onclick=ten()>10px</button>
+                <button id="fifteen-button" type ="html" onclick=fifteen()>15px</button>
+                <button id="twenty-button" type ="html" onclick=twenty()>20px</button>
+                <button id="twentyfive-button" type ="html" onclick=twenty_five()>25px</button>
+                <br><br>
+                <h4>Font-color: </h4>
+                <button id="button-blue" type ="html" onclick=blueFont()><b>blue</b></button>
+                <button id="button-green" type ="html" onclick=greenFont()><b>green</b></button>
+                <button id="button-red" type ="html" onclick=redFont()><b>red</b></button>
+                <button id="button-purple" type ="html" onclick=purpleFont()><b>purple</b></button>
+                <br><br>
+                <h4>Text-alignment: </h4>
+                <button id="sm-button" type ="html" onclick=rightAlign()>right</button>
+                <button id="sm-button" type ="html" onclick=leftAlign()>left</button>
+                <button id="sm-button" type ="html" onclick=centerAlign()>center</button>
+              </div>
+              <div class="col-md-5">
+                <h3 style="text-align:left"><b> Script</b></h3>
+                <div class="container-text" style="background-color:black">
+                  <p class="sophie1">h1 {</p>
+                  <p id="blue-font-tag"class="sophie1" style="text-indent: 30px">color: blue;</p>
+                  <p id="green-font-tag" class=""="sophie1" style="text-indent: 30px">color: green;</p>
+                  <p id="red-font-tag"class ="sophie1" style="text-indent: 30px">color: red;</p>
+                  <p id="purple-font-tag" class="sophie1" style="text-indent: 30px">color: purple;</p>
+                  <p class="sophie1">}</p>
+                  <p class="sophie1">body {</p>
+                  <p id="blue-background-tag" class="sophie1" style="text-indent: 30px">background-color: blue;</p>
+                  <p id="green-background-tag" class="sophie1" style="text-indent: 30px">background-color: green;</p>
+                  <p id="red-background-tag" class="sophie1" style="text-indent: 30px">background-color: red;</p>
+                  <p id="purple-background-tag"class="sophie1" style="text-indent: 30px">background-color: purple;</p>
+                  <p class="sophie1">}</p>
+                  <p class="sophie1">p {</p>
+                  <p id="arvo-tag"class="sophie1" style="text-indent: 30px">font-family: "Arvo";</p>
+                  <p id="cinzel-tag" class="sophie1" style="text-indent: 30px">font-family: "Cinzel";</p>
+                  <p id="lora-tag"class="sophie1" style="text-indent: 30px">font-family: "Lora";</p>
+                  <p id="hind-tag"class="sophie1" style="text-indent: 30px">font-family: "Hind";</p>
+                  <p id="ten-tag"class="sophie1" style="text-indent: 30px">font-size:"10px";</p>
+                  <p id="fifteen-tag"class="sophie1" style="text-indent: 30px">font-size:"15px";</p>
+                  <p id="twenty-tag"class="sophie1" style="text-indent: 30px">font-size:"20px";</p>
+                  <p id="twenty-five-tag"class="sophie1" style="text-indent: 30px">font-size:"25px";</p>
+                  <p id="right-tag" class="sophie1" style="text-indent: 30px">text-align:right;</p>
+                  <p id="left-tag"class="sophie1" style="text-indent: 30px">text-align:left;</p>
+                  <p id="center-tag" class="sophie1" style="text-indent: 30px">text-align:center;</p>
+                  <p class="sophie1">}</p>
+                </div>
+              </div>
+              <div class= "col-md-5">
+                <h3 style="text-align:left"><b>Output</b></h3>
+                <div class="container-text" id="background">
+                  <p class="sophie" style="font-size:40px"> This Is A Header (size 1) </p>
+                  <p class="sophie" style="font-size:35px"> This Is A Header (size 2) </p>
+                  <p class="sophie" style="font-size:30px"> This Is A Header (size 3) </p>
+                  <p class="sophie">This is a paragraph.</p>
+                  <p class="sophie"><b>This text is bold.</b></p>
+                  <p class="sophie"><i>This text is italic.</i></p>
+                  <p class="sophie">This text is <sup>superscript.</sup></p>
+                  <p class="sophie">This text is <sub>subscript.</sub></p>
+                  <ul class="arvo-tag">
+                    <li><p class="sophie">This is an unordered list.</p></li>
+                    <li><p class="sophie">You can list items.</p></li>
+                    <li><p class="sophie">This list uses bullet points.</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Beginning of the tutorial -->
+      <div class="container">
+          <div class="bg-faded p-4 my-4">
+              <hr class="divider">
+              <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn CSS Tutorial</strong></h2>
+              <hr class="divider">
+              <div class="row">
+                <div>
+                  <p>
+                    1. To start refer to the setup to learn how to save the file correctly
+                    <br>
+                    2. In order for you to link your HTML page to your CSS page, you will need to go to your HTML page and write
+                    '&lt;link href="helloStyle.css" rel="stylesheet"&gt;'
+                    <br><img src="img/linking_Css_Page.png" alt="linking" align="middle" height="200" width="600">
+                    <br>
+                    3. First lets change the background color! Your headings, text, pictures, etc. are in your body tag. So,
+                    to change the background color for everything you need to do something like this:
+                    <br><img src="img/backgroundColor.png" alt="background color" align="middle" height="100" width="400">
+                    <img src="img/backgroundColorOutput.png" alt="background color output" align="middle" height="200" width="400"><br>
+                    (The 'Hello World' statement is just a place holder for us your website should say whatever you put in your HTML file)
+                    <br>
+                    You don't need to make the color cyan. CSS has only a couple of the basic colors that you can use by writing
+                    their name, but you could replace the name with color codes that are in quotes. Here's a link to a bunch of different
+                    color codes you could use.<a href="https://www.w3schools.com/colors/colors_picker.asp">Click Here!</a>
+                    <br><img src="img/specialBackgroundColor.png" alt="color codes" align="middle" height="100" width="400">
+                    <img src="img/specialBackgroundColorOutput.png" alt="color codes output" align="middle" height="200" width="400">
+                    <br>
+                    4. To change the fonts you have a couple of different options.<br>
+                     Option 1: If you want to have the same font for everything on your page you can do this:
+                     <br><img src="img/scriptFonts.png" alt="Fonts" align="middle" height="100" width="500">
+                     <img src="img/changeFont.png" alt="Fonts output" align="middle" height="200" width="400">
+                     <br>Option 2: If you want to make your paragraphs and headers different fonts you can do this:
+                     <br><img src="img/scriptChangeFontSep.png" alt="Fonts" align="middle" height="200" width="400">
+                     <img src="img/changeFontSep.png" alt="Fonts output" align="middle" height="200" width="400"><br>
+                     &emsp;&emsp;&emsp;&emsp;&emsp;There are a bunch more fonts you can use. Here's a link to some.
+                      <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">Click Here!</a>
+                      <br>
+                    5. To change your font size you have the same two options. I will show you the way to do it separately
+                    for your paragraphs and headers. You can also write the same line just in the body if you prefer to do it that way.
+                    <br><img src="img/scriptSizing.png" alt="script" align="middle" height="200" width="400">
+                    <img src="img/sizingOutput.png" alt="script" align="middle" height="300" width="600"><br>
+                    6. You have now changed your font, background color, and font size! The next step is changing your font color!
+                    Once again like the features above you can do it all in the body if you want it all the same color.
+                    Otherwise, you can choose to do it like we did it below:<br>
+                    <img src="img/scriptFontColor.png" alt="font color script" align="middle" height="275" width="600">
+                    <img src="img/outputFontColor.png" alt="font color" align="middle" height="300" width="600">
+                    <br>
+                    Remember that you can get the hex color codes from the website linked above for background colors.
+                    <br>
+                    7. You've been probably wondering how to get your text aligned to the center, right, or left. Like all the ones above,
+                    feel free to do it in the body if you want all  your text to be aligned the same way.<br>
+                    your picture will already be aligned with the rest of your text. On the other hand if you separated it like
+                    the example we showed this is how you will center your picture! Centering a picture is a bit more
+                    complicated. This is because you will need to make a class and adjust parts in your HTML file and CSS file.
+                    Below is your HTML file on top with a circle on additional things you need to add,
+                    Css file in the middle, then the output on the bottom.<br>
+                    <img src="img/scriptHTMLCenterImg.png" alt="img alignment" align="middle" height="150" width="600"><br>
+                    <img src="img/scriptCssCenterIMG.png" alt="img alignment" align="middle" height="275" width="600">
+                    <img src="img/outputCenterImg.png" alt="img alignment" align="middle" height="300" width="600">
+                    <br>
+                    9. Your buttons may look very plain right now. Here's how to make them look sleek and exciting!
+                    Of course there is always many ways to make your buttons look cool. For example, you can make them change
+                    color when you hover or you could make them round or square! For our purposes we will teach you how to make them
+                    rounded and how to change their color. Once again the pictures go from HTML, CSS, Output.<br>
+                    <img src="img/scriptHTMLButton.png" alt="button" align="middle" height="150" width="600"><br>
+                    <img src="img/scriptCssButton.png" alt="button" align="middle" height="175" width="550">
+                    <img src="img/outputButton.png" alt="button" align="middle" height="300" width="600">
+                    <br>
+                    In this example there are a lot of the things that we talked about above put together.
+                    You can change any of these things and you should play around with them to see what kind of
+                    display you like.
+                    <br>
+                    Have fun exploring CSS!
+                  </p>
+              </div>

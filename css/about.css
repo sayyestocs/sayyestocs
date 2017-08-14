@@ -1,0 +1,50 @@
+p {
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.table-team-members{
+  display:table;
+  width:100%;
+}
+
+.img-fluid{
+  max-width:400px;
+  height:265px
+}
+
+.team-member {
+  display:table-row;
+}
+
+.div-text-team-member{
+  display:table-cell;
+  vertical-align:top;
+  padding-top:20px;
+  padding-right:.25px;
+}
+
+.team-member-name{
+  padding-top: 10px
+}
+.text-under {
+  text-align:left;
+  padding-top:10px
+}
+
+.text-team-member{
+
+
+}
+
+.img-team-member {
+  width: 185px;
+  height: 250px;
+  padding-top:10px;
+  display:table-cell;
+}
+.rotate {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}

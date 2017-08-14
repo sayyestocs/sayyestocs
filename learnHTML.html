@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Say Yes To CS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/learn.css" rel="stylesheet">
+    <link href="css/learnHTML.css" rel="stylesheet">
+    <script type="text/javascript" src="learnHTML.js"> </script>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+
+  <div class="tagline-upper text-center text-heading text-shadow text-white mt-4 hidden-md-down">Say Yes To CS</div>
+  <br>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-toggleable-md navbar-light navbar-custom bg-faded py-lg-4">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold hidden-lg-up" href="#">Start Bootstrap</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="learn.html">Learn</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="bg-faded p-4 my-4">
+            <hr class="divider">
+            <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn HTML Interactive</strong></h2>
+            <hr class="divider">
+            <h5>In the space below, you can play around with various HTML &#60;tags&#62;. In HTML, you must always &#60;open&#62; and &#60;/close&#62; tags. Some of the tags you may explore:</h5>
+            <ul style="color:black">
+              <li><h6>&#60;h1&#62;, &#60;h2&#62;, &#60;h3&#62;: headers of sizes 1 (largest) through 3 (smallest)</h6></li>
+              <li><h6>&#60;p&#62;: paragraph (can be 1+ lines)</h6></p>
+              <li><h6>&#60;b&#62;,&#60;i&#62;, &#60;sup&#62;, &#60;sub&#62;: <b>bold</b>, <i>italics</i>, <sup>sup</sup>erscript, and <sub>sub</sub>script</h6></li>
+              <li><h6>href: link a website</h6></li>
+              <li><h6>&#60;img&#62;: add an image</h6></li>
+              <li><h6>&#60;ul&#62;: an unordered list</h6></li>
+              <li><h6>&#60;ol&#62;: an ordered list</h6></li>
+            </ul>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <h3 style="text-align:left"><b>Buttons</b></h3>
+                <button id="button" type ="html" onclick="showH1()">&#60;h1&#62; </button>
+                <button id="button" type ="html" onclick="showH2()">&#60;h2&#62; </button>
+                <button id="button" type ="html" onclick="showH3()">&#60;h3&#62; </button>
+                <button id="button" type ="html" onclick="showPara()">&#60;p&#62; </button>
+                <button id="button" type="html" onclick="showBold()">&#60;b&#62;</button>
+                <button id="button" type="html" onclick="showItalic()">&#60;i&#62;</button>
+                <button id="button" type="html" onclick="showSup()">&#60;sup&#62;</button>
+                <button id="button" type="html" onclick="showSub()">&#60;sub&#62;</button>
+                <button id="button" type="html" onclick="showHREF()">href</button>
+                <button id="button" type="html" onclick="showImg()">&#60;img&#62;</button>
+                <button id="button" type="html" onclick="showList()">&#60;ul&#62;</button>
+                <button id="button" type="html" onclick="showNum()">&#60;ol&#62;</button>
+              </div>
+              <div class="col-md-5">
+                <h3 style="text-align:left"><b> Script</b></h3>
+                <div class="container-text" style="background-color: black">
+                  <p id="sophie1"> &#60;!DOCTYPE html&#62; </p>
+                  <p id="sophie1"> &#60;html&#62;</p>
+                  <p id="sophie1" style="text-indent: 30px"> &#60;body&#62;</p>
+                  <p id="sophie1" class="h1tag" style="text-indent: 60px">&#60;h1&#62; This Is A Header (size 1) &#60;/h1&#62;</p>
+                  <p id="sophie1" class="h2tag" style="text-indent: 60px">&#60;h2&#62; This Is A Header (size 2) &#60;/h2&#62;</p>
+                  <p id="sophie1" class="h3tag" style="text-indent: 60px">&#60;h3&#62; This Is A Header (size 3) &#60;/h3&#62;</p>
+                  <p id="sophie1" class="ptag" style="text-indent: 60px"> &#60;p&#62; This is a paragraph. &#60;/p&#62; </p>
+                  <p id="sophie1" class="boldtag" style="text-indent: 60px">&#60;p&#62;&#60;b&#62;This text is bold.&#60;/b&#62;&#60;/p&#62;</p>
+                  <p id="sophie1" class="italictag" style="text-indent: 60px">&#60;p&#62;&#60;i&#62;This text is italic.&#60;/i&#62;&#60;/p&#62;</p>
+                  <p id="sophie1" class="suptag" style="text-indent: 60px">&#60;p&#62;This text is &#60;sup&#62;superscript.&#60;sup&#62;&#60;/p&#62;</p>
+                  <p id="sophie1" class="subtag" style="text-indent: 60px">&#60;p&#62;This text is &#60;sub&#62;subscript.&#60;sub&#62;&#60;/p&#62;</p>
+                  <p id="sophie1" class="hreftag" style="margin-left: 60px"> &#60;a href&#61;&#34; https://www.youtube.com/watch?v=CE-JlvmnRtY &#34;&#62; This is a link. &#60;/a&#62;</p>
+                  <p id="sophie1" class="imgtag" style="margin-left:60px"> &#60;img src&#61;&#34;img/cat.jpg&#34; alt&#61;&#34;cat.jpg&#34; width&#61;&#34;200&#34; length&#61;&#34;200&#34;&#62;</p>
+                  <p id="sophie1" class="listtag" style="text-indent: 60px">&#60;ul&#62;</p>
+                  <p id="sophie1" class="listtag" style="text-indent: 90px">&#60;li&#62;This is an unordered list.&#60;li&#62;</p>
+                  <p id="sophie1" class="listtag" style="text-indent: 90px">&#60;li&#62;You can list items.&#60;li&#62;</p>
+                  <p id="sophie1" class="listtag" style="text-indent: 90px">&#60;li&#62;This list uses bullet points.&#60;li&#62;</p>
+                  <p id="sophie1" class="listtag" style="text-indent: 60px">&#60;ul&#62;</p>
+                  <p id="sophie1" class="numtag" style="text-indent: 60px">&#60;ol&#62;</p>
+                  <p id="sophie1" class="numtag" style="text-indent: 90px">&#60;li&#62;This is an ordered list.&#60;li&#62;</p>
+                  <p id="sophie1" class="numtag" style="text-indent: 90px">&#60;li&#62;You can list items using numbers.&#60;li&#62;</p>
+                  <p id="sophie1" class="numtag" style="margin-left: 90px">&#60;li&#62;It's great for keeping track of how many items are in a list!&#60;li&#62;</p>
+                  <p id="sophie1" class="numtag" style="text-indent: 60px">&#60;ol&#62;</p>
+                  <p id="sophie1" style="text-indent: 30px"> &#60;/body&#62; </p>
+                  <p id="sophie1"> &#60;/html&#62; </p>
+                </div>
+              </div>
+              <div class= "col-md-5">
+                <h3 style="text-align:left"><b>Output</b></h3>
+                <div class="container-text">
+                  <p id="sophie" class="h1tag" style="font-size:40px"> This Is A Header (size 1) </p>
+                  <p id="sophie" class="h2tag" style="font-size:35px"> This Is A Header (size 2) </p>
+                  <p id="sophie" class="h3tag" style="font-size:30px"> This Is A Header (size 3) </p>
+                  <p id="sophie" class="ptag">This is a paragraph.</p>
+                  <p id="sophie" class="boldtag"><b>This text is bold.</b></p>
+                  <p id="sophie" class="italictag"><i>This text is italic.</i></p>
+                  <p id="sophie" class="suptag">This text is <sup>superscript.</sup></p>
+                  <p id="sophie" class="subtag">This text is <sub>subscript.</sub></p>
+                  <p id="sophie" class="hreftag"><a href="https://www.youtube.com/watch?v=CE-JlvmnRtY">This is a link</a></p>
+                  <img class="imgtag" src="img/cat.jpg" alt="cat.jpg" width="150px" length="150px">
+                  <ul class="listtag">
+                    <li><p id="sophie">This is an unordered list.</p></li>
+                    <li><p id="sophie">You can list items.</p></li>
+                    <li><p id="sophie">This list uses bullet points.</p></li>
+                  </ul>
+                  <ol class="numtag">
+                    <li><p id="sophie">This is an ordered list.</p></li>
+                    <li><p id="sophie">You can list items using numbers.</p></li>
+                    <li><p id="sophie">It's great for keeping track of how many items are in a list!</p></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="bg-faded p-4 my-4">
+              <hr class="divider">
+              <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn HTML Tutorial</strong></h2>
+              <hr class="divider">
+              <div class="row">
+                <div class= "center">
+                  <p style="text-align:left;">
+                    1. To start refer to the setup to learn how to save the file correctly.
+                      <br>
+                    2. First, you need to define what kind of document you are working with.
+                    We do this using &#60;&#33;DOCTYPE html&#62; and &#60;html&#62;
+                    <br><img src="img/startingHTML.png" alt="start" align="middle" height="200" width="400">
+                    <br>
+                    3. HTML pages are like humans. They have heads, bodies, and footers. The <b>head</b> primarily holds
+                    the title of your website and other important links.For the head, add &#60;head&#62;. Inside the head, we
+                    can add the title. For the title, use &#60;title&#62;My First Website &#60;&#47;title&#62;
+                    We use &#34;&#60;&#47;&#62; &#34; because <b>HTML tag</b> (the brackets) are used in pairs. For every start tag,
+                    there is an end tag. The end tag is like the start tag but with a forward slash. Heres what the code looks like:
+                    <br><img src="img/headTitle.png" alt="head" align="middle" height="150" width="400">
+                    <br><img src="img/headTitleOutput.png" alt="head" align="middle" height="100" width="350">
+                    <br>
+                    4. Now, lets close the head using &#60;&#47;head&#62; the body comes after the head. the <b>body</b>
+                    will hold most of your code. Let's try adding a header to the body! A <b>header</b> is exactly what it sounds like.
+                    There are multiple different sizes of headers, but for now we will just use the first one.
+                    <br>
+                    5. Like most HTML attributes, the header uses HTML tags. Add &#60;h1&#62; and the header you choose, and the closing
+                    tags: &#60;&#47;h1&#62;
+                     <br><img src="img/startBody.png" alt="body" align="middle" height="200" width="300">
+                     <br>
+                     <img src= "img/startBodyOutput.png" alt="body" align="middle" height="150" width="300">
+                     <br>
+                    6. Inside the header, we can ake multiple <b>paragraphs</b> using the "p" tag. Start with &#60;p&#62;
+                    and put text inside. Inside the first brackets, you can change the text alignment using &#60;p style='text-align:(desired alignment)'&#62;
+                    This allows you to align text quickly and easily. To <b>bold</b> or <i>italicize</i> text use  &#60;b&#62;,  &#60;&#47;b&#62; and  &#60;i&#62;,
+                    &#60;&#47;i&#62; respectively.
+                     <br><img src="img/paragraphinfo.png" alt="paragraph" align="middle" height="250" width="350">
+                     <br><img src="img/paragraphinfoOutput.png" alt="paragraph" align="middle" heigh="100" width="300">
+                     <br>
+                    7. Now let's add images! You do this by using the &#60;img&#62; tag. The image tag is an
+                    <b>empty element</b> and requires only one attribute to work (and no closing tag!). Normally, src (source) is used
+                    to link the images.Use &#60;img src="link.jpg"&#62; to get the image! If your image is in another file, you can still
+                    get it to work! the only thing that changes is &#60;img src="<b>file name</b>/file link.jpg"&#62; Here is the sample code
+                    and what it looks like on the website!
+                    <br><img src="img/addImage.png" alt="image" align="middle" height="200" width="400">
+                    <br><img src="img/addImageOutput.png" alt="image" align="middle" height="300" width="300">
+                    <br>
+                    8. This example used the align, width, and length attributes to format the picture. These attributes are similar to
+                    the way src is set up. You will learn later that this 'styling' is apart of another language, CSS. This example also
+                    showed the use of <b>&#60;br&#62;</b> to create an extra space between the picture and the text.
+                    <br>
+                    9. In addition to images, you can link other websites to your page. You do this by using the <b>&#60;a&#62; / &#60;&#47;a&#62;</b>
+                    tags. Use &#60;a href=""&#62; and add your link inside the quotation marks.Put a message inbetween the start/end tags and finish by adding &#60;&#47;a&#62;. This will connect the link of your choice to
+                    your webpage! <a href="http://www.sanger.dk/">Click here for a fun suprise!</a>
+                    <br><img src="img/addLink.png" alt="link" align="middle" height="300" width="400">
+                    <br><img src="img/addLinkOutput.png" alt="link" align="middle" height="375" width="470">
+                    <br>
+                    10. Links are also used in creating buttons. Buttons allow you to have multiple pages linked to your main website
+                    page. First, you have to create a new document in Atom (this is explained in the <a href="setup.html"><button>Setup Page</button></a>
+                    so that when you click the button, it takes you to a new page. Then, link the page using &#60;a href=""&#62; / &#60;&#47;a&#62;. Inside the &#60;a href=""&#62;, you need
+                    to define the <b>button tag</b> so the computer recognizes it as a button. It should look something like this:
+                    <br><img src="img/buttonExample.png" alt="buttonexample" align="middle" height="50" width="450">
+                    <br>
+                    After you've done that, you have a button! Here is the example on the "main" page and the page the button takes you to:
+                    <br><img src="img/buttonCode.png" alt="button" align="middle" height="300" width="450">
+                    <br><img src="img/buttonCodeOutput1.png" alt="button" align="middle" height="350" width="350">
+                    <br><img src="img/buttonCodeOutput2.png" alt="button" align="middle" height="200" width="300">
+                    <br>
+                    11. Lastly, there is the <b>&#60;div&#62;</b> tag. Div divides your page and puts it into contained sections.
+                    You can use div to apply CSS to many elements at once. You can "id" each div to make it easier to understand and
+                    apply CSS to.
+                    <br>
+                    12. Now you have finished the basic HTML tutorial! Now, you have to using closing tags to close the body and the general html.
+                    To make your website more personal, go to our CSS tutorial to learn how to change font size, color, and put divs into practice.
+                    Happy coding!
+                    </thead>
+              </div>
