@@ -21,6 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="css/news.css" rel="stylesheet">
+    <script type="text/javascript" src="news.js"> </script>
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -130,7 +131,7 @@
                     <!-- <h2 class="card-title text-shadow text-uppercase mb-0">Important People in Tech</h2> -->
                     <!-- <p class="lead card-text text-shadow text-white w-50 hidden-md-down"></p> -->
                     <!-- <a href="" class="btn btn-secondary">Read More</a> -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -146,76 +147,82 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block img-fluid w-100" src="img/slide-4.jpg" alt="">
+                            <div class="carousel-item active"  onmouseover="showText()" onmouseout="hideText()">
+                                <img class="d-block img-fluid w-100" src="img/slide-4.jpg">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>Masako Wakamiya</h2>
+                                  <a class="text" href="http://money.cnn.com/2017/03/02/technology/81-year-old-woman-publishes-iphone-app-japan/index.html"><h2>Masako Wakamiya</h2></a>
+                                  <p class="text">Masako is a retired Banker who creates fun apps for people in her age range to increase their interest in smartphones. Her app, Hinadan, is an iOS based game.<br>Fun fact: Masako learned to use a computer at the age of 60.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-5.jpg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2 style="text-align:right;">Jeff Bezos</h2>
+                                  <a class="text" href="https://www.forbes.com/profile/jeff-bezos/"><h2>Jeff Bezos</h2></a>
+                                  <p class="text">Jeff Bezos is the founder and CEO of Amazon.<br>Fun fact:  Jeff is the founder of Blue Origin, a company with plans for suborbital human spaceflight by 2018.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-6.jpg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>Ada Lovelace</h2>
+                                  <a class="text" href="http://www.newyorker.com/tech/elements/ada-lovelace-the-first-tech-visionary"><h2>Ada Lovelace</h2></a>
+                                  <p class="text">Ada Lovelace is known as the world's first computer programmer.<br>Fun fact: Ada created the first computer-processed algorithm.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-7.jpg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2><font color="black">Reshma Saujani</font></h2>
+                                  <a class="text" href="http://www.businessinsider.com/reshma-saujani-profile-2013-8"><h2>Reshma Saujani</h2></a>
+                                  <p class="text">Reshma Saujani  is the founder of the organization Girls Who Code.<br>Fun fact: Reshma was the first Indian-American woman to run for Congress.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block img-fluid w-100" src="img/slide-8.jpg" alt="">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
+                                <img class="d-block img-fluid w-100" src="img/slide-8.jpeg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2 style="text-align:left;">Mark Zuckerberg</h2>
+                                  <a class="text" href="https://www.forbes.com/profile/mark-zuckerberg/"><h2>Mark Zuckerberg</h2></a>
+                                  <p class="text">Mark is the Cofounder, Chairman and CEO of Facebook.<br>Fun fact: At the age of 12 Mark created a messaging program that his father used in his dental office to know when patients arrived in the office.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-9.jpg" alt="">
                                 <!-- make a carousel caption right tag and define it in the css -->
-                                <div class="carousel-caption d-none d-md-block" style="bottom:initial; left:initial; right:5%;">
-                                  <h2>Dennis Ritchie</h2>
+                                <div class="carousel-caption d-none d-md-block">
+                                  <a class="text" href="http://www.nytimes.com/2011/10/14/technology/dennis-ritchie-programming-trailblazer-dies-at-70.html"><h2>Dennis Ritchie</h2></a>
+                                  <p class="text">Dennis Ritchie was a computer scientist who created the C programming language.<br>Fun Fact: He loved to read and travel.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-10.jpg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>Steve Jobs</h2>
+                                  <a class="text" href="http://www.newyorker.com/magazine/2011/11/14/the-tweaker"><h2>Steve Jobs</h2></a>
+                                  <p class="text">Steve Jobs was the cofounder of Apple Inc.<br>Fun Fact: He created the first Apple computer in his parents’ garage.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-11.jpg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>Grace Hopper</h2>
+                                  <a  class="text"href="http://www.amazingwomeninhistory.com/amazing-grace-hopper-computer-programmer/"><h2>Grace Hopper</h2></a>
+                                  <p class="text">Grace Hopper was a computer scientist as well as an officer in the United States Navy.<br>Fun Fact: Grace helped popularize the term computer bug because she was present when an actual moth was found in a computer.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-12.jpg" style="height:500px" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>John McCarthy</h2>
+                                  <a class="text" href="http://www.nytimes.com/2011/10/26/science/26mccarthy.html"><h2>John McCarthy</h2></a>
+                                  <p class="text">John McCarthy was the inventor of Lisp which was invented to do logic programming. He also made accomplishments in Artificial intelligence.<br>Fun Fact: John created the term artificial intelligence.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block img-fluid w-100" src="img/slide-13.png" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>Katherine Johnson</h2>
+                                  <a class="text" href="https://www.nasa.gov/content/katherine-johnson-biography"><h2>Katherine Johnson</h2></a>
+                                  <p class="text">Katherine Johnson is a mathematician and physicist who contributed to the United States aeronautics and space programs.<br>Fun Fact: Katherine was one of the three African-American children hand-picked to integrate into West Virginia's graduate schools.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" onmouseover="showText()" onmouseout="hideText()">
                                 <img class="d-block img-fluid w-100" src="img/slide-14.jpg" alt="">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h2>
-                                    <div style="position: relative; width: 250px;">
-                                      <div style="position: absolute; top: 0; right: 0; width: 100px; text-align:right;"></div>
-                                      Bill Gates
-                                    </div>
-                                  </h2>
+                                  <a class="text" href="https://www.entrepreneur.com/article/197526"><h2>Bill Gates</h2></a>
+                                  <p class="text">Bill Gates is the cofounder of Microsoft.<br>Fun Fact: He and his wife founded the Bill and Melinda Gates Foundation, which is dedicated to philanthropy.</p>
                                 </div>
                             </div>
                             <!-- <div class="carousel-item">

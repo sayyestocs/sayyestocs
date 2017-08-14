@@ -1,6 +1,15 @@
 #add-scroll-y {
   overflow-y: auto;
 }
+
+.text {
+  display: none;
+  color: white;
+}
+
+.img {
+}
+
 /*#add-scroll-y {
 float:left;
 width:1000px;
