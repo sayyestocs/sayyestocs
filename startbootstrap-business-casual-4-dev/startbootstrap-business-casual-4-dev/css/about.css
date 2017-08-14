@@ -4,8 +4,8 @@
 }
 
 .img-fluid{
-  max-width:500px;
-  height:300px
+  max-width:400px;
+  height:265px
 }
 
 .team-member {
@@ -29,11 +29,12 @@
 
 .text-team-member{
 
+
 }
 
 .img-team-member {
   width: 185px;
-  height: 200px;
+  height: 250px;
   padding-top:10px;
   display:table-cell;
 }
