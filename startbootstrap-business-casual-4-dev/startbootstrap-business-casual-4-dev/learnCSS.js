@@ -26,7 +26,7 @@ function blueBackground(a,b,c,d,x) {
   }
 }
 
-function greenBackground(a,b,c,d) {
+function greenBackground(a,b,c,d,x) {
   var a = document.getElementById('blue-background-tag');
   var b = document.getElementById('green-background-tag');
   var c = document.getElementById('red-background-tag');
@@ -44,7 +44,7 @@ function greenBackground(a,b,c,d) {
   }
 }
 
-function redBackground(a,b,c,d) {
+function redBackground(a,b,c,d,x) {
   var a = document.getElementById('blue-background-tag');
   var b = document.getElementById('green-background-tag');
   var c = document.getElementById('red-background-tag');
@@ -62,7 +62,7 @@ function redBackground(a,b,c,d) {
   }
 }
 
-function purpleBackground(a,b,c,d) {
+function purpleBackground(a,b,c,d,x) {
   var a = document.getElementById('blue-background-tag');
   var b = document.getElementById('green-background-tag');
   var c = document.getElementById('red-background-tag');
@@ -80,13 +80,293 @@ function purpleBackground(a,b,c,d) {
   }
 }
 
-// function show-blue-background() {
-//   var tag_list = document.getElementsByClassName('open-blue-background-tag');
-//   for (i = 0; i < tag_list.length; i++) {
-//       if (document.body.style.background === 'block') {
-//           document.body.style.background = 'none';
-//       } else {
-//           document.body.style.background = 'block';
-//       }
-//   }
-// }
+function arvoFont() {
+    var a = document.getElementById('arvo-tag');
+    var b = document.getElementById('cinzel-tag');
+    var c = document.getElementById('lora-tag');
+    var d = document.getElementById('hind-tag');
+    // var x = document.getElementById('sophie');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        console.log(x.style.fontFamily);
+        if (x.style.fontFamily !== "Arvo") {
+            x.style.fontFamily = "Arvo";
+        } else {
+            x.style.fontFamily = "times";
+        }
+    }
+    if (a.style.display === 'block') {
+        a.style.display = 'none';
+    } else {
+        a.style.display = 'block';
+        d.style.display = 'none';
+        b.style.display = 'none';
+        c.style.display = 'none';
+    }
+}
+
+function hindFont() {
+    var a = document.getElementById('arvo-tag');
+    var b = document.getElementById('cinzel-tag');
+    var c = document.getElementById('lora-tag');
+    var d = document.getElementById('hind-tag');
+    // var x = document.getElementById('sophie');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        console.log(x.style.fontFamily);
+        if (x.style.fontFamily !== "Hind") {
+            x.style.fontFamily = "Hind";
+        } else {
+            x.style.fontFamily = "times";
+        }
+    }
+    if (d.style.display === 'block') {
+        d.style.display = 'none';
+    } else {
+        d.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
+        c.style.display = 'none';
+    }
+}
+
+function loraFont() {
+    var a = document.getElementById('arvo-tag');
+    var b = document.getElementById('cinzel-tag');
+    var c = document.getElementById('lora-tag');
+    var d = document.getElementById('hind-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        console.log(x.style.fontFamily);
+        if (x.style.fontFamily !== "Lora") {
+            x.style.fontFamily = "Lora";
+        } else {
+            x.style.fontFamily = "times";
+        }
+    }
+    if (c.style.display === 'block') {
+        c.style.display = 'none';
+    } else {
+        c.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+
+function cinzelFont() {
+    var a = document.getElementById('arvo-tag');
+    var b = document.getElementById('cinzel-tag');
+    var c = document.getElementById('lora-tag');
+    var d = document.getElementById('hind-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        console.log(x.style.fontFamily);
+        if (x.style.fontFamily !== "Cinzel") {
+            x.style.fontFamily = "Cinzel";
+        } else {
+            x.style.fontFamily = "times";
+        }
+    }
+    if (b.style.display === 'block') {
+        b.style.display = 'none';
+    } else {
+        b.style.display = 'block';
+        a.style.display = 'none';
+        c.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+
+function ten() {
+    var a = document.getElementById('ten-tag');
+    var b = document.getElementById('fifteen-tag');
+    var c = document.getElementById('twenty-tag');
+    var d = document.getElementById('twenty-five-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 3; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.fontSize !== "10px") {
+            x.style.fontSize = "10px";
+        } else {
+            x.style.fontSize = "12px";
+        }
+    }
+    if (a.style.display === 'block') {
+        a.style.display = 'none';
+    } else {
+        a.style.display = 'block';
+        b.style.display = 'none';
+        c.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+function fifteen() {
+    var a = document.getElementById('ten-tag');
+    var b = document.getElementById('fifteen-tag');
+    var c = document.getElementById('twenty-tag');
+    var d = document.getElementById('twenty-five-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 3; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.fontSize !== "15px") {
+            x.style.fontSize = "15px";
+        } else {
+            x.style.fontSize = "12px";
+        }
+    }
+    if (b.style.display === 'block') {
+        b.style.display = 'none';
+    } else {
+        b.style.display = 'block';
+        a.style.display = 'none';
+        c.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+function twenty() {
+    var a = document.getElementById('ten-tag');
+    var b = document.getElementById('fifteen-tag');
+    var c = document.getElementById('twenty-tag');
+    var d = document.getElementById('twenty-five-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 3; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.fontSize !== "20px") {
+            x.style.fontSize = "20px";
+        } else {
+            x.style.fontSize = "12px";
+        }
+    }
+    if (c.style.display === 'block') {
+        c.style.display = 'none';
+    } else {
+        c.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+function twenty_five() {
+    var a = document.getElementById('ten-tag');
+    var b = document.getElementById('fifteen-tag');
+    var c = document.getElementById('twenty-tag');
+    var d = document.getElementById('twenty-five-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 3; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.fontSize !== "25px") {
+            x.style.fontSize = "25px";
+        } else {
+            x.style.fontSize = "12px";
+        }
+    }
+    if (d.style.display === 'block') {
+        d.style.display = 'none';
+    } else {
+        d.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
+        c.style.display = 'none';
+    }
+}
+
+function blueFont() {
+    var a = document.getElementById('blue-font-tag');
+    var b = document.getElementById('green-font-tag');
+    var c = document.getElementById('red-font-tag');
+    var d = document.getElementById('purple-font-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < 1; i++) {
+        var x = tag_list[i];
+        if (x.style.color !== "blue") {
+            x.style.color = "blue";
+        } else {
+            x.style.color = "black";
+        }
+    }
+    if (a.style.display === 'block') {
+        a.style.display = 'none';
+    } else {
+        a.style.display = 'block';
+        b.style.display = 'none';
+        c.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+
+function greenFont() {
+    var a = document.getElementById('blue-font-tag');
+    var b = document.getElementById('green-font-tag');
+    var c = document.getElementById('red-font-tag');
+    var d = document.getElementById('purple-font-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < 1; i++) {
+        var x = tag_list[i];
+        if (x.style.color !== "green") {
+            x.style.color = "green";
+        } else {
+            x.style.color = "black";
+        }
+    }
+    if (b.style.display === 'block') {
+        b.style.display = 'none';
+    } else {
+        b.style.display = 'block';
+        a.style.display = 'none';
+        c.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+
+function redFont() {
+    var a = document.getElementById('blue-font-tag');
+    var b = document.getElementById('green-font-tag');
+    var c = document.getElementById('red-font-tag');
+    var d = document.getElementById('purple-font-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < 1; i++) {
+        var x = tag_list[i];
+        if (x.style.color !== "red") {
+            x.style.color = "red";
+        } else {
+            x.style.color = "black";
+        }
+    }
+    if (c.style.display === 'block') {
+        c.style.display = 'none';
+    } else {
+        c.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
+        d.style.display = 'none';
+    }
+}
+
+function purpleFont() {
+    var a = document.getElementById('blue-font-tag');
+    var b = document.getElementById('green-font-tag');
+    var c = document.getElementById('red-font-tag');
+    var d = document.getElementById('purple-font-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < 1; i++) {
+        var x = tag_list[i];
+        if (x.style.color !== "purple") {
+            x.style.color = "purple";
+        } else {
+            x.style.color = "black";
+        }
+    }
+    if (d.style.display === 'block') {
+        d.style.display = 'none';
+    } else {
+        d.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
+        c.style.display = 'none';
+    }
+}

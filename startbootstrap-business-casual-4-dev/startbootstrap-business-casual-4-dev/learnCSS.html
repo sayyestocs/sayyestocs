@@ -18,7 +18,10 @@
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
 
@@ -93,29 +96,71 @@
                 <button id="sm-button-purple" type ="html" onclick="purpleBackground()">purple</button>
                 <br>
                 <h4><b>Font-family: </b></h4>
+                <button id="sm-button" type ="html" onclick=arvoFont()>Arvo</button>
+                <button id="sm-button" type ="html" onclick=cinzelFont()>Cinzel</button>
+                <button id="sm-button" type ="html" onclick=loraFont()>Lora</button>
+                <button id="sm-button" type ="html" onclick=hindFont()>Hind</button>
                 <br>
                 <h4><b>Font-size: </b></h4>
+                <button id="sm-button" type ="html" onclick=ten()>10px</button>
+                <button id="sm-button" type ="html" onclick=fifteen()>15px</button>
+                <button id="sm-button" type ="html" onclick=twenty()>20px</button>
+                <button id="sm-button" type ="html" onclick=twenty_five()>25px</button>
                 <br>
                 <h4><b>Font-color: </b></h4>
+                <button id="sm-button" type ="html" onclick=blueFont()>blue</button>
+                <button id="sm-button" type ="html" onclick=greenFont()>green</button>
+                <button id="sm-button" type ="html" onclick=redFont()>red</button>
+                <button id="sm-button" type ="html" onclick=purpleFont()>purple</button>
                 <br>
                 <h4><b>Text-alignment: </b></h4>
+                <button id="sm-button" type ="html" onclick=>left</button>
+                <button id="sm-button" type ="html" onclick=>right</button>
+                <button id="sm-button" type ="html" onclick=>center</button>
               </div>
               <div class="col-md-5">
                 <h3 style="text-align:left"> Script</h3>
                 <div class="container-text">
+                  <p>h1 {</p>
+                  <p id="blue-font-tag" style="text-indent: 30px">color: blue;</p>
+                  <p id="green-font-tag" style="text-indent: 30px">color: green;</p>
+                  <p id="red-font-tag" style="text-indent: 30px">color: red;</p>
+                  <p id="purple-font-tag" style="text-indent: 30px">color: purple;</p>
+                  <p>}</p>
                   <p>body {</p>
                   <p id="blue-background-tag" style="text-indent: 30px">background-color: blue;</p>
                   <p id="green-background-tag" style="text-indent: 30px">background-color: green;</p>
                   <p id="red-background-tag" style="text-indent: 30px">background-color: red;</p>
                   <p id="purple-background-tag" style="text-indent: 30px">background-color: purple;</p>
                   <p>}</p>
-
+                  <p>p {</p>
+                  <p id="arvo-tag" style="text-indent: 30px">font-family: "Arvo";</p>
+                  <p id="cinzel-tag" style="text-indent: 30px">font-family: "Cinzel";</p>
+                  <p id="lora-tag" style="text-indent: 30px">font-family: "Lora";</p>
+                  <p id="hind-tag" style="text-indent: 30px">font-family: "Hind";</p>
+                  <p id="ten-tag" style="text-indent: 30px">font-size:"10px";</p>
+                  <p id="fifteen-tag" style="text-indent: 30px">font-size:"15px";</p>
+                  <p id="twenty-tag" style="text-indent: 30px">font-size:"20px";</p>
+                  <p id="twenty-five-tag" style="text-indent: 30px">font-size:"25px";</p>
+                  <p>}</p>
                 </div>
               </div>
               <div class= "col-md-5">
                 <h3 style="text-align:left">Output</h3>
                 <div class="container-text" id="background">
-
+                  <p class="sophie" style="font-size:40px"> This Is A Header (size 1) </p>
+                  <p class="sophie" style="font-size:35px"> This Is A Header (size 2) </p>
+                  <p class="sophie" style="font-size:30px"> This Is A Header (size 3) </p>
+                  <p class="sophie">This is a paragraph.</p>
+                  <p class="sophie"><b>This text is bold.</b></p>
+                  <p class="sophie"><i>This text is italic.</i></p>
+                  <p class="sophie">This text is <sup>superscript.</sup></p>
+                  <p class="sophie">This text is <sub>subscript.</sub></p>
+                  <ul class="arvo-tag">
+                    <li><p class="sophie">This is an unordered list.</p></li>
+                    <li><p class="sophie">You can list items.</p></li>
+                    <li><p class="sophie">This list uses bullet points.</p></li>
+                  </ul>
                 </div>
               </div>
             </div>
