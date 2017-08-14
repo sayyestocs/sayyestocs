@@ -41,7 +41,7 @@
   <div class="tagline-upper text-center text-heading text-shadow text-white mt-4 hidden-md-down">Say Yes To CS</div>
   <br>
 
-    <!-- Navigation -->
+    <!-- Navigatiocn -->
     <nav class="navbar navbar-toggleable-md navbar-light navbar-custom bg-faded py-lg-4">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,7 +54,15 @@
                         <a class="nav-link text-uppercase text-expanded" href="home.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="learn.html">Learn</a>
+                        <div class="dropdown">
+                          <a class="nav-link text-uppercase text-expanded" class="dropbtn" href="learn.html">Learn</a>
+                          <!-- <button class="dropbtn">Dropdown</button> -->
+                          <div class="dropdown-content">
+                              <a href="setup.html">Setup</a>
+                              <a href="learnhtml.html">Learn HTML</a>
+                              <a href="learncss.html">Learn CSS</a>
+                          </div>
+                        </div>
                     </li>
                     <li class="nav-item px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="news.html">News</a>
