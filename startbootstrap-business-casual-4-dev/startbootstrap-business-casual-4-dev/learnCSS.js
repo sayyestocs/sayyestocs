@@ -1,13 +1,3 @@
-// function show-blue-background() {
-//   document.body.style.background = LightSkyBlue;
-// }
-// var a = document.getElementById('blue-background-tag');
-// var b = document.getElementById('green-background-tag');
-// var c = document.getElementById('red-background-tag');
-// var d = document.getElementById('purple-background-tag');
-// var x = document.getElementById('background');
-
-
 function blueBackground(a,b,c,d,x) {
   var a = document.getElementById('blue-background-tag');
   var b = document.getElementById('green-background-tag');
@@ -85,7 +75,6 @@ function arvoFont() {
     var b = document.getElementById('cinzel-tag');
     var c = document.getElementById('lora-tag');
     var d = document.getElementById('hind-tag');
-    // var x = document.getElementById('sophie');
     var tag_list = document.getElementsByClassName('sophie');
     for (i = 0; i < tag_list.length; i++) {
         var x = tag_list[i];
@@ -283,8 +272,8 @@ function blueFont() {
     var tag_list = document.getElementsByClassName('sophie');
     for (i = 0; i < 1; i++) {
         var x = tag_list[i];
-        if (x.style.color !== "blue") {
-            x.style.color = "blue";
+        if (x.style.color !== "navy") {
+            x.style.color = "navy";
         } else {
             x.style.color = "black";
         }
@@ -307,8 +296,8 @@ function greenFont() {
     var tag_list = document.getElementsByClassName('sophie');
     for (i = 0; i < 1; i++) {
         var x = tag_list[i];
-        if (x.style.color !== "green") {
-            x.style.color = "green";
+        if (x.style.color !== "seagreen") {
+            x.style.color = "seagreen";
         } else {
             x.style.color = "black";
         }
@@ -331,8 +320,8 @@ function redFont() {
     var tag_list = document.getElementsByClassName('sophie');
     for (i = 0; i < 1; i++) {
         var x = tag_list[i];
-        if (x.style.color !== "red") {
-            x.style.color = "red";
+        if (x.style.color !== "maroon") {
+            x.style.color = "maroon";
         } else {
             x.style.color = "black";
         }
@@ -368,5 +357,71 @@ function purpleFont() {
         a.style.display = 'none';
         b.style.display = 'none';
         c.style.display = 'none';
+    }
+}
+
+function rightAlign() {
+    var a = document.getElementById('right-tag');
+    var b = document.getElementById('left-tag');
+    var c = document.getElementById('center-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.textAlign !== "right") {
+            x.style.textAlign = "right";
+        } else {
+            x.style.textAlign = "initial";
+        }
+    }
+    if (a.style.display === 'block') {
+        a.style.display = 'none';
+    } else {
+        a.style.display = 'block';
+        b.style.display = 'none';
+        c.style.display = 'none';
+    }
+}
+
+function leftAlign() {
+    var a = document.getElementById('right-tag');
+    var b = document.getElementById('left-tag');
+    var c = document.getElementById('center-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.textAlign !== "left") {
+            x.style.textAlign = "left";
+        } else {
+            x.style.textAlign = "initial";
+        }
+    }
+    if (b.style.display === 'block') {
+        b.style.display = 'none';
+    } else {
+        b.style.display = 'block';
+        a.style.display = 'none';
+        c.style.display = 'none';
+    }
+}
+
+function centerAlign() {
+    var a = document.getElementById('right-tag');
+    var b = document.getElementById('left-tag');
+    var c = document.getElementById('center-tag');
+    var tag_list = document.getElementsByClassName('sophie');
+    for (i = 0; i < tag_list.length; i++) {
+        var x = tag_list[i];
+        if (x.style.textAlign !== "center") {
+            x.style.textAlign = "center";
+        } else {
+            x.style.textAlign = "initial";
+        }
+    }
+    if (c.style.display === 'block') {
+        c.style.display = 'none';
+    } else {
+        c.style.display = 'block';
+        a.style.display = 'none';
+        b.style.display = 'none';
     }
 }

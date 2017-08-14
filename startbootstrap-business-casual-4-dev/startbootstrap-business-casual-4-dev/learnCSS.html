@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
 
@@ -88,65 +89,68 @@
             <br>
             <div class="row">
               <div class="col-md-2">
-                <h3 style="text-align:left">Buttons</h3>
-                <h4><b>Background-color: </b></h4>
+                <h3 style="text-align:left"><b>Buttons</b></h3>
+                <h4>Background-color: </h4>
                 <button id="sm-button-blue" type ="html" onclick="blueBackground()">blue</button>
                 <button id="sm-button-green" type ="html" onclick="greenBackground()">green</button>
                 <button id="sm-button-red" type ="html" onclick="redBackground()">red</button>
                 <button id="sm-button-purple" type ="html" onclick="purpleBackground()">purple</button>
-                <br>
-                <h4><b>Font-family: </b></h4>
-                <button id="sm-button" type ="html" onclick=arvoFont()>Arvo</button>
-                <button id="sm-button" type ="html" onclick=cinzelFont()>Cinzel</button>
-                <button id="sm-button" type ="html" onclick=loraFont()>Lora</button>
-                <button id="sm-button" type ="html" onclick=hindFont()>Hind</button>
-                <br>
-                <h4><b>Font-size: </b></h4>
-                <button id="sm-button" type ="html" onclick=ten()>10px</button>
-                <button id="sm-button" type ="html" onclick=fifteen()>15px</button>
-                <button id="sm-button" type ="html" onclick=twenty()>20px</button>
-                <button id="sm-button" type ="html" onclick=twenty_five()>25px</button>
-                <br>
-                <h4><b>Font-color: </b></h4>
-                <button id="sm-button" type ="html" onclick=blueFont()>blue</button>
-                <button id="sm-button" type ="html" onclick=greenFont()>green</button>
-                <button id="sm-button" type ="html" onclick=redFont()>red</button>
-                <button id="sm-button" type ="html" onclick=purpleFont()>purple</button>
-                <br>
-                <h4><b>Text-alignment: </b></h4>
-                <button id="sm-button" type ="html" onclick=>left</button>
-                <button id="sm-button" type ="html" onclick=>right</button>
-                <button id="sm-button" type ="html" onclick=>center</button>
+                <br><br>
+                <h4>Font-family: </h4>
+                <button id="arvo-button" type ="html" onclick=arvoFont()>Arvo</button>
+                <button id="cinzel-button" type ="html" onclick=cinzelFont()>Cinzel</button>
+                <button id="lora-button" type ="html" onclick=loraFont()>Lora</button>
+                <button id="hind-button" type ="html" onclick=hindFont()>Hind</button>
+                <br><br>
+                <h4>Font-size: </h4>
+                <button id="ten-button" type ="html" onclick=ten()>10px</button>
+                <button id="fifteen-button" type ="html" onclick=fifteen()>15px</button>
+                <button id="twenty-button" type ="html" onclick=twenty()>20px</button>
+                <button id="twentyfive-button" type ="html" onclick=twenty_five()>25px</button>
+                <br><br>
+                <h4>Font-color: </h4>
+                <button id="button-blue" type ="html" onclick=blueFont()><b>blue</b></button>
+                <button id="button-green" type ="html" onclick=greenFont()><b>green</b></button>
+                <button id="button-red" type ="html" onclick=redFont()><b>red</b></button>
+                <button id="button-purple" type ="html" onclick=purpleFont()><b>purple</b></button>
+                <br><br>
+                <h4>Text-alignment: </h4>
+                <button id="sm-button" type ="html" onclick=rightAlign()>right</button>
+                <button id="sm-button" type ="html" onclick=leftAlign()>left</button>
+                <button id="sm-button" type ="html" onclick=centerAlign()>center</button>
               </div>
               <div class="col-md-5">
-                <h3 style="text-align:left"> Script</h3>
-                <div class="container-text">
-                  <p>h1 {</p>
-                  <p id="blue-font-tag" style="text-indent: 30px">color: blue;</p>
-                  <p id="green-font-tag" style="text-indent: 30px">color: green;</p>
-                  <p id="red-font-tag" style="text-indent: 30px">color: red;</p>
-                  <p id="purple-font-tag" style="text-indent: 30px">color: purple;</p>
-                  <p>}</p>
-                  <p>body {</p>
-                  <p id="blue-background-tag" style="text-indent: 30px">background-color: blue;</p>
-                  <p id="green-background-tag" style="text-indent: 30px">background-color: green;</p>
-                  <p id="red-background-tag" style="text-indent: 30px">background-color: red;</p>
-                  <p id="purple-background-tag" style="text-indent: 30px">background-color: purple;</p>
-                  <p>}</p>
-                  <p>p {</p>
-                  <p id="arvo-tag" style="text-indent: 30px">font-family: "Arvo";</p>
-                  <p id="cinzel-tag" style="text-indent: 30px">font-family: "Cinzel";</p>
-                  <p id="lora-tag" style="text-indent: 30px">font-family: "Lora";</p>
-                  <p id="hind-tag" style="text-indent: 30px">font-family: "Hind";</p>
-                  <p id="ten-tag" style="text-indent: 30px">font-size:"10px";</p>
-                  <p id="fifteen-tag" style="text-indent: 30px">font-size:"15px";</p>
-                  <p id="twenty-tag" style="text-indent: 30px">font-size:"20px";</p>
-                  <p id="twenty-five-tag" style="text-indent: 30px">font-size:"25px";</p>
-                  <p>}</p>
+                <h3 style="text-align:left"><b> Script</b></h3>
+                <div class="container-text" style="background-color:black">
+                  <p class="sophie1">h1 {</p>
+                  <p id="blue-font-tag"class="sophie1" style="text-indent: 30px">color: blue;</p>
+                  <p id="green-font-tag" class=""="sophie1" style="text-indent: 30px">color: green;</p>
+                  <p id="red-font-tag"class ="sophie1" style="text-indent: 30px">color: red;</p>
+                  <p id="purple-font-tag" class="sophie1" style="text-indent: 30px">color: purple;</p>
+                  <p class="sophie1">}</p>
+                  <p class="sophie1">body {</p>
+                  <p id="blue-background-tag" class="sophie1" style="text-indent: 30px">background-color: blue;</p>
+                  <p id="green-background-tag" class="sophie1" style="text-indent: 30px">background-color: green;</p>
+                  <p id="red-background-tag" class="sophie1" style="text-indent: 30px">background-color: red;</p>
+                  <p id="purple-background-tag"class="sophie1" style="text-indent: 30px">background-color: purple;</p>
+                  <p class="sophie1">}</p>
+                  <p class="sophie1">p {</p>
+                  <p id="arvo-tag"class="sophie1" style="text-indent: 30px">font-family: "Arvo";</p>
+                  <p id="cinzel-tag" class="sophie1" style="text-indent: 30px">font-family: "Cinzel";</p>
+                  <p id="lora-tag"class="sophie1" style="text-indent: 30px">font-family: "Lora";</p>
+                  <p id="hind-tag"class="sophie1" style="text-indent: 30px">font-family: "Hind";</p>
+                  <p id="ten-tag"class="sophie1" style="text-indent: 30px">font-size:"10px";</p>
+                  <p id="fifteen-tag"class="sophie1" style="text-indent: 30px">font-size:"15px";</p>
+                  <p id="twenty-tag"class="sophie1" style="text-indent: 30px">font-size:"20px";</p>
+                  <p id="twenty-five-tag"class="sophie1" style="text-indent: 30px">font-size:"25px";</p>
+                  <p id="right-tag" class="sophie1" style="text-indent: 30px">text-align:right;</p>
+                  <p id="left-tag"class="sophie1" style="text-indent: 30px">text-align:left;</p>
+                  <p id="center-tag" class="sophie1" style="text-indent: 30px">text-align:center;</p>
+                  <p class="sophie1">}</p>
                 </div>
               </div>
               <div class= "col-md-5">
-                <h3 style="text-align:left">Output</h3>
+                <h3 style="text-align:left"><b>Output</b></h3>
                 <div class="container-text" id="background">
                   <p class="sophie" style="font-size:40px"> This Is A Header (size 1) </p>
                   <p class="sophie" style="font-size:35px"> This Is A Header (size 2) </p>
@@ -208,8 +212,37 @@
                     for your paragraphs and headers. You can also write the same line just in the body if you prefer to do it that way.
                     <br><img src="img/scriptSizing.png" alt="script" align="middle" height="200" width="400">
                     <img src="img/sizingOutput.png" alt="script" align="middle" height="300" width="600"><br>
-
-
-
+                    6. You have now changed your font, background color, and font size! The next step is changing your font color!
+                    Once again like the features above you can do it all in the body if you want it all the same color.
+                    Otherwise, you can choose to do it like we did it below:<br>
+                    <img src="img/scriptFontColor.png" alt="font color script" align="middle" height="275" width="600">
+                    <img src="img/outputFontColor.png" alt="font color" align="middle" height="300" width="600">
+                    <br>
+                    Remember that you can get the hex color codes from the website linked above for background colors.
+                    <br>
+                    7. You've been probably wondering how to get your text aligned to the center, right, or left. Like all the ones above,
+                    feel free to do it in the body if you want all  your text to be aligned the same way.<br>
+                    your picture will already be aligned with the rest of your text. On the other hand if you separated it like
+                    the example we showed this is how you will center your picture! Centering a picture is a bit more
+                    complicated. This is because you will need to make a class and adjust parts in your HTML file and CSS file.
+                    Below is your HTML file on top with a circle on additional things you need to add,
+                    Css file in the middle, then the output on the bottom.<br>
+                    <img src="img/scriptHTMLCenterImg.png" alt="img alignment" align="middle" height="150" width="600"><br>
+                    <img src="img/scriptCssCenterIMG.png" alt="img alignment" align="middle" height="275" width="600">
+                    <img src="img/outputCenterImg.png" alt="img alignment" align="middle" height="300" width="600">
+                    <br>
+                    9. Your buttons may look very plain right now. Here's how to make them look sleek and exciting!
+                    Of course there is always many ways to make your buttons look cool. For example, you can make them change
+                    color when you hover or you could make them round or square! For our purposes we will teach you how to make them
+                    rounded and how to change their color. Once again the pictures go from HTML, CSS, Output.<br>
+                    <img src="img/scriptHTMLButton.png" alt="button" align="middle" height="150" width="600"><br>
+                    <img src="img/scriptCssButton.png" alt="button" align="middle" height="175" width="550">
+                    <img src="img/outputButton.png" alt="button" align="middle" height="300" width="600">
+                    <br>
+                    In this example there are a lot of the things that we talked about above put together.
+                    You can change any of these things and you should play around with them to see what kind of
+                    display you like.
+                    <br>
+                    Have fun exploring CSS!
                   </p>
               </div>
