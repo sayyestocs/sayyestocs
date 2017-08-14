@@ -18,6 +18,12 @@ button{
   color: black;
 }
 
+#sophie1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  color: white;
+}
+
 img {
    display : block;
    margin : auto;
