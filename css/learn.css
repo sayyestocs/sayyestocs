@@ -11,6 +11,7 @@ button{
     padding: 20px;
     width: 400px;
     height: 75px;
+    line-height: 37px;
 }
 .center {
     margin: auto;
