@@ -10,6 +10,22 @@
 .img {
 }
 
+button{
+  background-color:  "white";
+  color: "black";
+  font-family: "Josefin Slab";
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #e6e6e6;
+    padding: 10px;
+    width: 130px;
+    height: 45px;
+    line-height: 22.5px;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+
 /*#add-scroll-y {
 float:left;
 width:1000px;
