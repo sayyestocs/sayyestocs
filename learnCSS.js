@@ -76,7 +76,7 @@ function arvoFont() {
     var c = document.getElementById('lora-tag');
     var d = document.getElementById('hind-tag');
     var tag_list = document.getElementsByClassName('sophie');
-    for (i = 0; i < tag_list.length; i++) {
+    for (i = 3; i < tag_list.length; i++) {
         var x = tag_list[i];
         console.log(x.style.fontFamily);
         if (x.style.fontFamily !== "Arvo") {
@@ -102,7 +102,7 @@ function hindFont() {
     var d = document.getElementById('hind-tag');
     // var x = document.getElementById('sophie');
     var tag_list = document.getElementsByClassName('sophie');
-    for (i = 0; i < tag_list.length; i++) {
+    for (i = 3; i < tag_list.length; i++) {
         var x = tag_list[i];
         console.log(x.style.fontFamily);
         if (x.style.fontFamily !== "Hind") {
@@ -127,7 +127,7 @@ function loraFont() {
     var c = document.getElementById('lora-tag');
     var d = document.getElementById('hind-tag');
     var tag_list = document.getElementsByClassName('sophie');
-    for (i = 0; i < tag_list.length; i++) {
+    for (i = 3; i < tag_list.length; i++) {
         var x = tag_list[i];
         console.log(x.style.fontFamily);
         if (x.style.fontFamily !== "Lora") {
@@ -152,7 +152,7 @@ function cinzelFont() {
     var c = document.getElementById('lora-tag');
     var d = document.getElementById('hind-tag');
     var tag_list = document.getElementsByClassName('sophie');
-    for (i = 0; i < tag_list.length; i++) {
+    for (i = 3; i < tag_list.length; i++) {
         var x = tag_list[i];
         console.log(x.style.fontFamily);
         if (x.style.fontFamily !== "Cinzel") {
